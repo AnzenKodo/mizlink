@@ -12,7 +12,7 @@
       "headers": [
         {
           "key": "Content-Security-Policy",
-          "value": "default-src"
+          "value": "default-src style-src img-src"
         },
         {
           "key": "X-Content-Type-Options",
