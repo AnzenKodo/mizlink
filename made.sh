@@ -51,7 +51,7 @@ index() {
 		.footer {
 		background: #2c3e50;
 		padding: .2em;
-		color: #ecf0f1;
+		color: #8e44ad;
 		font-size: 1.5rem;
 		}
 		.footer a {
