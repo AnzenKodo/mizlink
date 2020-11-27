@@ -3,10 +3,8 @@
   "public": true,
   "cleanUrls": true,
 	"trailingSlash": false,
-	"routes": [
-    { "handle": "filesystem" },
-		{ "src": "/(.*)", "status": 404, "dest": "/index.html" },
-		{ "src": "/sites", "dest": "/" }
+	"rewrites": [
+   		{ "source": "/sites", "destination": "/" },
 	],
   "headers": [
     {
