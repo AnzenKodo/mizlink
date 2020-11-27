@@ -72,7 +72,8 @@ index() {
 	done
 
 	cat <<-_EOF_
-		<p class="footer">@<a href="https://fillyagioro.vercel.app">Filly Agioro</a>
+		<p class="footer">©<a href="https://fillyagioro.vercel.app">Filly Agioro</a>
+		under <a href="LICENSE.txt">GPL 3.0</a>
 		| <a href="https://github.com/FillyAgioro/mizlink">Website Source</a>
 		</p>
 		</body>
