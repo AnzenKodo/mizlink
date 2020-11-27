@@ -2,10 +2,10 @@
   "name": "HTML Redirect Website",
   "public": true,
   "cleanUrls": true,
-	"trailingSlash": false,
-	"rewrites": [
-   		{ "source": "/sites", "destination": "/" },
-	],
+  "trailingSlash": false,
+  "rewrites": [
+      { "source": "/sites", "destination": "/" },
+    ],
   "headers": [
     {
       "source": "/(.*)",
