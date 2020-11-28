@@ -1,7 +1,9 @@
 # !/bin/bash
 
-echo "Which website you redirect?"
+echo "\nWhich website you redirect? (without https:// and www.)"
 read website_url
+echo "\nWhat should be name of the link?"
+read link_name
 
 title="MizLink"
 
@@ -26,7 +28,7 @@ redirect() {
 	_EOF_
 
 }
-echo $(redirect) >l/$website_url.html
+echo $(redirect) >l/$link_name.html
 
 index() {
 	cat <<-_EOF_
@@ -67,7 +69,7 @@ index() {
 
 	for i in l/*.html; do
 		cat <<-_EOF_
-			<a href="$i">$(echo $i | cut -b 3-)</a>
+			<a href="$i">$(echo $i | cut -b 3- | cut -f 1 -d '.')</a>
 		_EOF_
 	done
 
