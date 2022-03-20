@@ -1,7 +1,5 @@
 # MizLink
 
-![MizLink Screen record](screencast.gif)
-
 This site generator with bit.ly like redirect capability. It work little bit differently then bit.ly, it uses shell-script to make links and site which contents the record of the links.
 
 ## 🔨 Building & Running
