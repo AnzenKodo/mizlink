@@ -23,11 +23,13 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run:
-          wget https://github.com/mikefarah/yq/releases/download/${VERSION}/${BINARY} -O /usr/bin/yq &&\
-          chmod +x /usr/bin/yq
-          ./build
+      - name: Install yaml parser yq
+        uses: mikefarah/yq@v4.27.5
+        with:
+          cmp: yq --version
+        
+      - name: Build
+        run: ./build
             
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
