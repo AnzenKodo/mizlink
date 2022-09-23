@@ -24,9 +24,12 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        uses: mikefarah/yq@master
-        with:
-          cmd: ./build && ls
+        run:
+          sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys CC86BB64
+          sudo add-apt-repository ppa:rmescandon/yq
+          sudo apt update
+          sudo apt install yq -y
+          ./build
             
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
