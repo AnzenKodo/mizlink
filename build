@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 output() {
   local file=config.yaml
   echo $(yq "$1" $file)
@@ -37,11 +37,6 @@ _EOF_
   return
 }
 
-rm site &> /dev/null
-mkdir -pv $site
-cp -f $style $site &> /dev/null
-cp -f $favicon $site &> /dev/null
-
 index() {
   cat <<-_EOF_
         $(head)
@@ -64,14 +59,14 @@ index() {
           <ul>
 _EOF_
 
-for (( i=0; i < $length; ++i ))
-do
-  name=$(links "[$i].name")
-  url=$(links "[$i].url")
+  for (( i=0; i < $length; i++ ))
+  do
+    name=$(links "[$i].name")
+    url=$(links "[$i].url")
 
-  echo "<li><a href=\"$start_url/$name.html\">$name</a></li>"
-  echo $(head)$(redirect $url) >.$site/$name.html
-done
+    echo "<li><a href=\"$start_url/$name.html\">$name</a></li>"
+    echo $(head)$(redirect $url) >$site/$name.html
+  done
 
   cat <<-_EOF_
         $(head)
@@ -84,7 +79,13 @@ _EOF_
 
   return
 }
-echo $(index)
+
+
+rm site &> /dev/null
+mkdir -pv $site
+
+cp -f $style $site &> /dev/null
+cp -f $favicon $site &> /dev/null
 
 echo $(index) > $site/index.html
 echo $(index) > $site/404.html
