@@ -64,8 +64,7 @@ index() {
           <ul>
 _EOF_
 
-i=0
-while [ "$i" -le $length ]; do
+for (( i=0; i < $length; ++i ))
   name=$(links "[$i].name")
   url=$(links "[$i].url")
 
