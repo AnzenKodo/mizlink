@@ -65,7 +65,7 @@ while [ "$i" -le $length ]; do
   url=$(links "[$i].url")
 
   echo "<li><a href=\"$start_url/$name.html\">$name</a></li>"
-  echo $(head)$(redirect $url) >$site/$name.html
+  echo $(head)$(redirect $url) >.$site/$name.html
 done
 
   cat <<-_EOF_
