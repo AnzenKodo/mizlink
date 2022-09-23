@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 output() {
   local file=config.yaml
   echo $(yq "$1" $file)
@@ -59,8 +59,8 @@ index() {
           <ul>
 _EOF_
 
-for (( i=2; i <= $length; ++i ))
-do
+i=0
+while [ "$i" -le $length ]; do
   name=$(links "[$i].name")
   url=$(links "[$i].url")
 
