@@ -30,7 +30,7 @@ jobs:
         run: 
           go install github.com/mikefarah/yq/v4@latest &&
           yq --version &&
-          sh ./build
+          bash ./build
         shell: bash
             
       - name: Deploy
