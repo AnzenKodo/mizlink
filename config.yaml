@@ -1,0 +1,12 @@
+name: MizLink
+description: Link shortner website.
+site: site
+footer: Made by <a href="https://anzenkodo.github.io/AnzenKodo">AnzenKodo</a> | <a href="https://github.com/AnzenKodo/mizlink">SOURCE</a>
+style: style.css
+favicon: favicon.png
+start_url: https://AnzenKodo.github.io/mizlink
+links:
+  - name: google
+    url: https://google.com
+  - name: wiki
+    url: https://wikipedia.org
