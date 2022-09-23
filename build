@@ -37,6 +37,11 @@ _EOF_
   return
 }
 
+rm site &> /dev/null
+mkdir -pv $site
+cp -f $style $site &> /dev/null
+cp -f $favicon $site &> /dev/null
+
 index() {
   cat <<-_EOF_
         $(head)
@@ -80,11 +85,6 @@ _EOF_
   return
 }
 echo $(index)
-
-rm site &> /dev/null
-mkdir -pv $site
-cp -f $style $site &> /dev/null
-cp -f $favicon $site &> /dev/null
 
 echo $(index) > $site/index.html
 echo $(index) > $site/404.html
