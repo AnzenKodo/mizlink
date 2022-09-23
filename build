@@ -59,7 +59,7 @@ index() {
           <ul>
 _EOF_
 
-  for (( i=0; $i < $length; $i++))
+  for (( i=0; i < $length; i++))
   do
     name=$(links "[$i].name")
     url=$(links "[$i].url")
