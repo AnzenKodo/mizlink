@@ -31,6 +31,7 @@ jobs:
           go install github.com/mikefarah/yq/v4@latest &&
           yq --version &&
           sh ./build
+        shell: bash
             
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
