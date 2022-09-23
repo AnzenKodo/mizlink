@@ -29,6 +29,7 @@ jobs:
       - name: Install yq & build
         run: 
           go install github.com/mikefarah/yq/v4@latest &&
+          yq --version &&
           ./build
             
       - name: Deploy
