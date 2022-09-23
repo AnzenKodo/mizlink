@@ -26,7 +26,7 @@ jobs:
       - name: Run a one-line script
         uses: mikefarah/yq@master
         with:
-          run: ./build && ls
+          cmd: ./build && ls
             
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
