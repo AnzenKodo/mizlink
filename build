@@ -58,8 +58,8 @@ index() {
         <main>
           <ul>
 _EOF_
-
-  for (( i=0; i < 2; i++))
+  i=0
+  while [ $i -lt $length ]
   do
     name=$(links "[$i].name")
     url=$(links "[$i].url")
