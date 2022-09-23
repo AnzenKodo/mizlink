@@ -79,6 +79,7 @@ _EOF_
 
   return
 }
+echo $(index)
 
 rm site &> /dev/null
 mkdir -pv $site
