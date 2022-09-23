@@ -24,7 +24,9 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: ./build
+        uses: mikefarah/yq@master
+        with:
+          run: ./build
             
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
