@@ -3,7 +3,9 @@ description: Link shortner website.
 site: site
 footer: Made by <a href="https://anzenkodo.github.io/AnzenKodo">AnzenKodo</a> | <a href="https://github.com/AnzenKodo/mizlink">SOURCE</a>
 style: style.css
-favicon: favicon.png
+favicon:
+  url: favicon.png
+  type: image/png
 start_url: https://AnzenKodo.github.io/mizlink
 links:
   - name: google

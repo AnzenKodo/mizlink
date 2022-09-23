@@ -13,7 +13,8 @@ site=$(output '.site')
 length=$(expr $(links " | length"))
 footer=$(output '.footer')
 style=$(output '.style')
-favicon=$(output '.favicon')
+favicon=$(output '.favicon.url')
+favicon_type=$(output '.favicon.type')
 start_url=$(output '.start_url')
 
 head() {
@@ -47,7 +48,7 @@ index() {
         <meta property="og:type" content="website">
         <meta property="og:image" content="$start_url/$favicon">
         <meta property="og:image:alt" content="$name logo">
-        <link rel="icon" type="image/png" href="$start_url/$favicon">
+        <link rel="icon" type="$favicon_type" href="$start_url/$favicon">
         <link rel="stylesheet" href="$style">
       </head>
       <body>

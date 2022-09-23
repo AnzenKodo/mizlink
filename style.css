@@ -10,8 +10,9 @@ body {
   background: var(--bg);
   color: var(--fg);
   max-width: 40rem;
+  padding: 1em;
   height: 100%;
-  margin: 1em auto;
+  margin: auto;
 }
 
 header{
