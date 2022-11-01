@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" width="500" height="500" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <ellipse style="stroke: rgb(0, 0, 0); stroke-miterlimit: 1; stroke-width: 0px; fill: rgb(21, 20, 27);" cx="250" cy="250" rx="250" ry="250"/>
+  <g style="" transform="matrix(0.709094, 0, 0, 0.709094, 71.410371, 82.35856)">
+    <rect x="59.214" y="569.059" width="473.702" height="71.132" style="stroke: rgb(0, 0, 0); stroke-width: 0px; stroke-miterlimit: 1; fill: rgb(97, 255, 255);" transform="matrix(0.730776, -0.682617, 0.704571, 0.710269, -390.502472, 9.069027)" bx:origin="0.504342 0.468349"/>
+    <rect x="250" y="50" width="200" height="50" style="stroke: rgb(0, 0, 0); stroke-width: 0px; stroke-miterlimit: 1; fill: rgb(97, 255, 255);"/>
+    <rect x="400" y="50" width="50" height="200" style="stroke: rgb(0, 0, 0); stroke-width: 0px; stroke-miterlimit: 1; fill: rgb(97, 255, 255);"/>
+  </g>
+</svg>
