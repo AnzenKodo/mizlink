@@ -1,43 +1,29 @@
 # MizLink
 
-This site generator with bit.ly like redirect capability. It work little bit differently then bit.ly, it uses shell-script to make links and site which contents the record of the links.
+The link shorter made with Shell-Script and configure with YAML file.
 
-## 🔨 Building & Running
- 
-Clone the repo
-```bash
-git clone https://github.com/FillyAgioro/mizlink.git
-```
+## Getting Started
+1. Fork this [repo](https://github.com/anzenkodo/mizlink) and clone it.
+2. Edit the YAML file.
+  - Example:
+    ```yaml
+    ...
+    links:
+      - name: my-website
+        link: https://my-website-url.com
+    ```
+3. Run build file in your terminal.
+  ```
+  ./build
+  ```
 
-Go to repo
-```bash
-cd mizlink
-```
+### Using with GitHub Pages
+MizLink is pre-configured to build website in GitHub Pages.
+1. Fork this [repo](https://github.com/anzenkodo/mizlink) and clone it.
+2. Go to settings section -> Code and automation -> Pages -> Build and deployment
+   - Select **Source:** Deploy from branch.
+   - Select **Branch:** gh-pages and click save.
 
-Make script executable
-```bash
-chmod a+x ./run.sh
-```
-
-Run the script
-```bash
-./run.sh
-```
-
-file_folder Editing the theme
-
-## 🚸 Support
-
-To support this project development please consider [DONATING](https://fillyagioro.vercel.app/#support).
-
-## 👥 Contributing
-
-Please read [`CONTRIBUTING`](https://github.com/FillyAgioro/.github/blob/main/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## ✏️ Authors
-
-See also the list of [Contributors](https://github.com/FillyAgioro/mizlink/graphs/contributors) who participated in this project.
-
-## 📄️ License
-
-See the [`LICENSE`](LICENSE.txt) file for details
+## Build and Demo
+- See build files in [gh-pages](https://github.com/AnzenKodo/mizlink/tree/gh-pages) branch.
+- [Demo](https://anzenkodo.github.io/mizlink/)
