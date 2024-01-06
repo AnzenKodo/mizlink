@@ -24,7 +24,7 @@ jobs:
         uses: mikefarah/yq@v4.31.2
         
       - name: Build
-        run: ./build
+        run: ./build.sh
         shell: bash
             
       - name: Deploy
