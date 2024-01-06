@@ -12,7 +12,6 @@ description=$(output '.description')
 site=$(output '.site')
 length=$(expr $(links " | length"))
 footer=$(output '.footer')
-style=$(output '.style')
 favicon=$(output '.favicon.url')
 favicon_type=$(output '.favicon.type')
 start_url=$(output '.start_url')
@@ -137,7 +136,6 @@ _EOF_
 rm site &> /dev/null
 mkdir -pv $site
 
-cp -f $style $site &> /dev/null
 cp -f $favicon $site &> /dev/null
 
 echo $(index) > $site/index.html
