@@ -14,7 +14,7 @@ The link shorter made with Shell-Script and configure with YAML file.
     ```
 3. Run build file in your terminal.
   ```
-  ./build
+  ./build.sh
   ```
 
 ### Using with GitHub Pages
